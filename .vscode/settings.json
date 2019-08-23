@@ -1,0 +1,43 @@
+{
+    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
+	"actionButtons": {
+        "defaultColor": "#ff0034", // Can also use string color names.
+        "commands": [
+            {
+                "name": "Py MenuConfig",
+                "color": "lime",
+                "command": "idf.py menuconfig",
+            },
+            {
+                "name": "Py Build",
+                "color": "orange",
+                "command": "idf.py build size",
+            },
+            {
+                "name": "Py Flash",
+                "color": "lime",
+                "command": "idf.py -p COM3 -b 921600 flash",
+            },
+            {
+                "name": "Py Monitor",
+                "color": "orange",
+                "command": "idf.py -p COM3 monitor",
+            },
+            {
+                "name": "Py clean",
+                "color": "white",
+                "command": "idf.py clean",
+            },
+            {
+                "name": "Py Full Clean",
+                "color": "white",
+                "command": "idf.py fullclean",
+            },   
+            {
+                "name": "OTA Upload",
+                "color": "lime",
+                "command": "curl 192.168.0.23:8032 --data-binary @- < build/OTA_Template.bin",
+            },                     
+        ]
+    }
+}
