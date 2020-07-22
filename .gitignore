@@ -1,0 +1,6 @@
+/hello_world_example/build/*
+/hello_world_example/sdkconfig.defaults
+/hello_world_example/sdkconfig.old
+
+/.vscode/*
+

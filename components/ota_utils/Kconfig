@@ -1,0 +1,41 @@
+menu "OTA Update Configuration"
+
+    config WIFI_SSID
+        string "WiFi SSID"
+        default "myssid"
+        help
+            SSID (network name) for the example to connect to.
+
+    config WIFI_PWD
+        string "WiFi Password"
+        default "mypassword"
+        help
+            WiFi password (WPA or WPA2) for the example to use.
+
+    config WIFI_AP_RECONN_ATTEMPTS
+        int "No. of attempts to connect to AP"
+        default 5
+        help
+            Max number of attempts to connect to AP, after which the system reboots.
+
+    config OTA_TASK_STACK_SIZE
+        int "OTA task stack size"
+        default 8192
+        help
+            OTA task stack size
+            Higher the stack size, faster the OTA flashing.
+            But, risk of memory overflow increases.
+    
+    config OTA_TASK_PRIORITY
+        int "OTA task priority"
+        default 8
+        help
+            OTA task priority
+            Always keep it greater than your application tasks.
+    
+    config OTA_LISTEN_PORT
+        int "OTA listen port"
+        default 8032
+        help
+            Listening socket port for OTA
+endmenu
