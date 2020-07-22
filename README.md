@@ -114,6 +114,7 @@ void app_main(void)
 1. Suspending or deleting all the applications tasks when OTA update is triggered.
 2. Modification for projects where ESP32 needs to act as an AP.
 3. Testing with advanced projects with multiple components enabled (E.g, UART, MQTT, etc)
+4. Implementing WebSockets instead of TCP Socket with the command-line support
 
 ## Acknowledgements
 
